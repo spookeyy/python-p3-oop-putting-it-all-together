@@ -7,7 +7,7 @@ class Shoe:
 
     def set_size(self, size):
         if not isinstance(size, int):
-            print("size must be an integer\n")
+            raise ValueError("size must be an integer\n")
         else:
             self._size = size
 
